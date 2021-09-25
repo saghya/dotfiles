@@ -12,7 +12,6 @@ export BROWSER='brave'
 # export MANPAGER='nvim +Man!'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-
 setopt auto_cd
 setopt PROMPT_SUBST
 
@@ -52,11 +51,15 @@ fi
 
 ### CHANGE TITLE OF TERMINALS
 case ${TERM} in
-  xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|alacritty|st|konsole*)
-    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
-        ;;
-  screen*)
-    PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
+    xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|alacritty|st|konsole*)
+        precmd () {
+            print -Pn "\033]0;%n@%M:%~\007"
+        } 
+    ;;
+    screen*)
+        precmd () {
+            print -Pn "\033_%n@$%M:%~\033\\"
+        }
     ;;
 esac
 
@@ -154,7 +157,6 @@ alias fgrep='fgrep --color=auto'
 # confirm before overwriting something
 alias cp="cp -i"
 alias mv='mv -i'
-alias rm='rm -i'
 
 # git
 alias addup='git add -u'
