@@ -110,6 +110,7 @@ IFS=$SAVEIFS
 
 alias n='nvim'
 alias r='ranger'
+alias feh='feh --image-bg black -Z -.'
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 
@@ -142,10 +143,8 @@ alias l.='exa -a | egrep "^\."'
 
 # pacman and yay
 alias pacsyu='sudo pacman -Syyu'                 # update only standard pkgs
-alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
-alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
-alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
-alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
+alias yaysua='yay -Sua'                          # update only AUR pkgs (yay)
+alias yaysyu='yay -Syu'                          # update standard pkgs and AUR pkgs (yay)
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns (pacman -Qtdq)'  # remove orphaned packages
 
@@ -168,7 +167,7 @@ alias commit='git commit -m'
 alias fetch='git fetch'
 alias pull='git pull origin'
 alias push='git push origin'
-alias status='git status'  # 'status' is protected name so using 'stat' instead
+alias status='git status'
 alias tag='git tag'
 alias newtag='git tag -a'
 # bare git repo alias for dotfiles
