@@ -17,6 +17,7 @@ setopt PROMPT_SUBST
 
 HISTSIZE=10000
 SAVEHIST=10000
+setopt HIST_IGNORE_DUPS
 
 # Basic auto/tab complete:
 autoload -Uz compinit promptinit
@@ -114,26 +115,6 @@ alias feh='feh --image-bg black -Z -.'
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 
-# navigation
-up () {
-  local d=""
-  local limit="$1"
-
-  # Default to limit of 1
-  if [ -z "$limit" ] || [ "$limit" -le 0 ]; then
-    limit=1
-  fi
-
-  for ((i=1;i<=limit;i++)); do
-    d="../$d"
-  done
-
-  # perform cd. Show error if cd fails
-  if ! cd "$d"; then
-    echo "Couldn't go up $limit dirs.";
-  fi
-}
-
 # Changing "ls" to "exa"
 alias ls='exa -l --no-user --color=always --group-directories-first'
 alias l='exa -la --no-user --git --color=always --group-directories-first'
@@ -144,9 +125,6 @@ alias l.='exa -a | egrep "^\."'
 # pacman and yay
 alias pacsyu='sudo pacman -Syyu'                 # update only standard pkgs
 alias yaysua='yay -Sua'                          # update only AUR pkgs (yay)
-alias yaysyu='yay -Syu'                          # update standard pkgs and AUR pkgs (yay)
-alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
-alias cleanup='sudo pacman -Rns (pacman -Qtdq)'  # remove orphaned packages
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -158,18 +136,7 @@ alias cp="cp -i"
 alias mv='mv -i'
 
 # git
-alias addup='git add -u'
-alias addall='git add .'
-alias branch='git branch'
-alias checkout='git checkout'
-alias clone='git clone'
-alias commit='git commit -m'
-alias fetch='git fetch'
-alias pull='git pull origin'
-alias push='git push origin'
-alias status='git status'
-alias tag='git tag'
-alias newtag='git tag -a'
+alias g="git"
 # bare git repo alias for dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
