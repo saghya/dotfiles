@@ -113,8 +113,8 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
-    # family: JetBrains Mono
-    family: UbuntuMono Nerd Font
+    family: JetBrainsMono Nerd Font
+    # family: UbuntuMono Nerd Font
     # family: Iosevka Nerd Font 
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
@@ -133,8 +133,8 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
-    # family: JetBrains Mono
-    family: UbuntuMono Nerd Font
+    family: JetBrainsMono Nerd Font
+    # family: UbuntuMono Nerd Font
     # family: Iosevka Nerd Font 
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
@@ -153,8 +153,8 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
-    # family: JetBrains Mono
-    family: UbuntuMono Nerd Font
+    family: JetBrainsMono Nerd Font
+    # family: UbuntuMono Nerd Font
     # family: Iosevka Nerd Font 
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
@@ -173,8 +173,8 @@ font:
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
-    # family: JetBrains Mono
-    family: UbuntuMono Nerd Font
+    family: JetBrainsMono Nerd Font
+    # family: UbuntuMono Nerd Font
     # family: Iosevka Nerd Font 
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
@@ -184,7 +184,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 8.0
+  size: 7.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
