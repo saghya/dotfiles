@@ -42,7 +42,7 @@ lua require'lspconfig'.pyright.setup{}
 lua require('nvim-autopairs').setup()
 lua require'colorizer'.setup()
 lua require'nvim-web-devicons'.setup()
-lua require('lualine').setup{ options = { theme = 'papercolor_dark', component_separators = '', section_separators = '' } } 
+lua require('lualine').setup{ options = { theme = 'palenight', component_separators = '', section_separators = '' } } 
 
 nnoremap <SPACE> <Nop>
 let mapleader = "\<Space>"

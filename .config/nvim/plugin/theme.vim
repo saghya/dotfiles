@@ -12,7 +12,7 @@ EOF
 let g:nvcode_termcolors=256
 
 syntax on
-colorscheme onedark " Or whatever colorscheme you make
+colorscheme snazzy " Or whatever colorscheme you make
 
 " checks if your terminal has 24-bit color support
 if (has("termguicolors"))
