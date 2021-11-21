@@ -9,7 +9,7 @@ set termguicolors
 set laststatus=2
 set noshowmode
 set completeopt=menuone,noselect
-set nohlsearch
+" set nohlsearch
 set clipboard+=unnamedplus
 set hidden
 set nobackup
@@ -17,6 +17,7 @@ set guicursor=i:ver1
 set guicursor+=a:blinkon1
 set cursorline
 
+au BufRead,BufNewFile *.asm set filetype=nasm
 
 call plug#begin()
 

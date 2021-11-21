@@ -9,8 +9,8 @@ export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 export EDITOR='nvim'
 export TERMINAL='alacritty'
 export BROWSER='brave'
-# export MANPAGER='nvim +Man!'
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER='nvim +Man!'
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 setopt auto_cd
 setopt PROMPT_SUBST
