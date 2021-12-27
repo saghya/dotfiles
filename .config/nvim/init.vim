@@ -79,6 +79,9 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap H mzJ`z
 
+" Disables automatic commenting on newline:
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 " Shortcutting split navigation, saving a keypress:
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -87,3 +90,4 @@ map <C-l> <C-w>l
  
 " Save file as sudo on files that require root permission
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit
+
