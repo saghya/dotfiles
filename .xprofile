@@ -11,6 +11,5 @@ picom &
 dunst &
 batsignal -e -b &
 udiskie &
-light-locker &
 libinput-gestures-setup start
 
