@@ -11,4 +11,5 @@ picom &
 dunst &
 batsignal -e -b &
 udiskie &
-libinput-gestures-setup start
+libinput-gestures-setup autostart start
+
