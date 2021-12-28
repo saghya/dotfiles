@@ -1,15 +1,14 @@
 #!/bin/sh
 
-export PATH="${PATH}:${HOME}/.scripts"
+export PATH="${PATH}:${HOME}/.local/scripts"
 export _JAVA_AWT_WM_NONREPARENTING=1
 QT_QPA_PLATFORMTHEME=qt5ct
 
 setxkbmap -layout hu
 xbindkeys
-~/.scripts/fehbg &
+fehbg
 picom &
 dunst &
 batsignal -e -b &
 udiskie &
 libinput-gestures-setup start
-

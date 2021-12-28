@@ -29,6 +29,6 @@ alias mv='mv -i'
 # git
 alias g="git"
 # bare git repo alias for dotfiles
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.local/dotfiles/ --work-tree=$HOME'
 
 
