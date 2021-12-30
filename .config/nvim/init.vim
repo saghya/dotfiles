@@ -18,6 +18,7 @@ set guicursor+=a:blinkon1
 set cursorline
 
 au BufRead,BufNewFile *.asm set filetype=nasm
+let g:c_syntax_for_h = 1
 
 if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/plug.vim"'))
     echo "Downloading junegunn/vim-plug to manage plugins..."
