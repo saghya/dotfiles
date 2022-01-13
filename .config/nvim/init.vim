@@ -8,7 +8,7 @@ set scrolloff=8
 set termguicolors
 set laststatus=2
 set noshowmode
-set completeopt=menuone,noselect
+set completeopt=menu,menuone,noselect
 " set nohlsearch
 set clipboard+=unnamedplus
 set hidden
@@ -16,6 +16,7 @@ set nobackup
 set guicursor=i:ver1
 set guicursor+=a:blinkon1
 set cursorline
+set noswapfile
 
 au BufRead,BufNewFile *.asm set filetype=nasm
 let g:c_syntax_for_h = 1
@@ -35,7 +36,11 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-compe'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'saadparwaiz1/cmp_luasnip' " Snippets source for nvim-cmp
+Plug 'L3MON4D3/LuaSnip' " Snippets plugin
 Plug 'windwp/nvim-autopairs'
 Plug 'norcalli/nvim-colorizer.lua'
 
@@ -56,11 +61,11 @@ nnoremap <SPACE> <Nop>
 let mapleader = "\<Space>"
 
 " nvim-autopairs
-inoremap <silent><expr> <C-Space> compe#complete()
-inoremap <silent><expr> <CR>      compe#confirm(luaeval("require 'nvim-autopairs'.autopairs_cr()"))
-inoremap <silent><expr> <C-e>     compe#close('<C-e>')
-inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
-inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
+" inoremap <silent><expr> <C-Space> cmp#complete()
+" inoremap <silent><expr> <CR>      cmp#confirm(luaeval("require 'nvim-autopairs'.autopairs_cr()"))
+" inoremap <silent><expr> <C-e>     cmp#close('<C-e>')
+" inoremap <silent><expr> <C-f>     cmp#scroll({ 'delta': +4 })
+" inoremap <silent><expr> <C-d>     cmp#scroll({ 'delta': -4 })
 
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
