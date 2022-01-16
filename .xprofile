@@ -7,6 +7,7 @@ QT_QPA_PLATFORMTHEME=qt5ct
 setxkbmap -layout hu
 xbindkeys
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+xset r rate 250 30
 fehbg
 picom &
 dunst &
