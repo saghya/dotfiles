@@ -11,7 +11,10 @@ xset r rate 250 30
 fehbg
 picom &
 dunst &
-batsignal -e -b &
 udiskie &
-libinput-gestures-setup autostart start
+
+if hostnamectl status | grep Chassis | cut -f2 -d ":" | tr -d ' ' | grep -q "laptop"; then
+    batsignal -e -b &
+    libinput-gestures-setup autostart start
+fi
 
