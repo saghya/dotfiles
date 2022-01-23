@@ -23,11 +23,11 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # confirm before overwriting something
-alias cp="cp -i"
+alias cp='cp -i'
 alias mv='mv -i'
 
 # git
-alias g="git"
+alias g='git'
 # bare git repo alias for dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.local/dotfiles/ --work-tree=$HOME'
 
