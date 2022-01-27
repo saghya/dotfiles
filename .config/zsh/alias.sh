@@ -13,18 +13,19 @@ alias ll='exa -lah --git --color=always --group-directories-first'
 alias lt='exa -aT --color=always --group-directories-first'
 alias l.='exa -a | egrep "^\."'
 
-# pacman and yay
-alias pacsyu='sudo pacman -Syyu'                 # update only standard pkgs
-alias yaysua='yay -Sua'                          # update only AUR pkgs (yay)
-
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-# confirm before overwriting something
+# confirmations
 alias cp='cp -i'
 alias mv='mv -i'
+alias rm='rm -i'
+alias ln='ln -i'
+
+# mkdir create parents
+alias mkdir='mkdir -pv'
 
 # git
 alias g='git'
