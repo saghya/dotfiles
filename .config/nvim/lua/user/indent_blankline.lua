@@ -1,4 +1,9 @@
-require("indent_blankline").setup {
+local indent_blankline_status_ok, indent_blankline = pcall(require, "indent_blankline")
+if not indent_blankline_status_ok then
+  return
+end
+
+indent_blankline.setup {
     char = "¦",   -- '|', '¦', '┆', '┊'
     filetype_exclude = { "help", "terminal", "dashboard", "packer" },
     buftype_exclude = {"terminal"},
