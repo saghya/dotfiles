@@ -1,6 +1,6 @@
 local indent_blankline_status_ok, indent_blankline = pcall(require, "indent_blankline")
 if not indent_blankline_status_ok then
-  return
+    return
 end
 
 indent_blankline.setup {
