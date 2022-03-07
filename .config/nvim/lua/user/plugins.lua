@@ -63,6 +63,9 @@ return packer.startup(function(use)
     -- LSP
     use "neovim/nvim-lspconfig"     -- enable LSP
 
+    -- formatter
+    use "rhysd/vim-clang-format"
+
     -- Treesitter
     use {
         "nvim-treesitter/nvim-treesitter",
