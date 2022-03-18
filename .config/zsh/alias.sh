@@ -2,6 +2,7 @@
 
 alias n='nvim'
 alias r='ranger'
+alias z='zathura'
 alias feh='feh --image-bg black -Z -.'
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
