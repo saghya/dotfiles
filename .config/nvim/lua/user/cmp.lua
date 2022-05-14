@@ -53,8 +53,10 @@ cmp.setup {
         { name = 'luasnip' },
         { name = "path" },
     },
-    documentation = {
-        border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-    },
+    window = {
+        documentation = {
+            border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+        },
+    }
 }
 
