@@ -9,7 +9,7 @@ export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 export EDITOR='nvim'
 export VISUAL='nvim'
 export TERMINAL='alacritty'
-export BROWSER='chromium'
+export BROWSER='google-chrome-stable'
 export MANPAGER='nvim +Man!'
 # export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
