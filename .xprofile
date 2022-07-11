@@ -12,6 +12,8 @@ fehbg
 picom -b
 dunst &
 udiskie &
+xinput --set-prop 11 'libinput Accel Speed' -0.8
+imwheel
 
 # TODO: fix this
 if hostnamectl status | grep Chassis | cut -f2 -d ":" | tr -d ' ' | grep -q "laptop"; then
