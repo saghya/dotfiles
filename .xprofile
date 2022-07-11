@@ -15,8 +15,8 @@ udiskie &
 xinput --set-prop 11 'libinput Accel Speed' -0.8
 imwheel
 
-chassis_type=$(read -r /sys/class/dmi/id/chassis_type)
-if [ "$chassis_type" = 9 ] || [ "$chassis_type" = 10 ]; then
+read -r CHASSIS_TYPE < /sys/class/dmi/id/chassis_type
+if [ "$CHASSIS_TYPE" = 9 ] || [ "$CHASSIS_TYPE" = 10 ]; then
     batsignal -e -b &
     libinput-gestures-setup autostart start
 fi
