@@ -13,6 +13,7 @@ picom -b
 dunst &
 udiskie &
 
+# TODO: fix this
 if hostnamectl status | grep Chassis | cut -f2 -d ":" | tr -d ' ' | grep -q "laptop"; then
     batsignal -e -b &
     libinput-gestures-setup autostart start
