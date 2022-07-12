@@ -14,6 +14,7 @@ dunst &
 udiskie &
 xinput --set-prop 11 'libinput Accel Speed' -0.8
 imwheel
+bash ~/.local/src/nfancurve/temp.sh &
 
 read -r CHASSIS_TYPE < /sys/class/dmi/id/chassis_type
 if [ "$CHASSIS_TYPE" = 9 ] || [ "$CHASSIS_TYPE" = 10 ]; then
