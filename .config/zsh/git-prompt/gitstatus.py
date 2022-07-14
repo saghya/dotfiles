@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 from __future__ import print_function
 
 import os
@@ -81,7 +81,7 @@ for st in status:
             staged.append(st)
 
 stashed = get_stash()
-if not changed and not staged and not conflicts and not untracked:
+if not changed and not staged and not conflicts and not untracked and not stashed:
     clean = 1
 else:
     clean = 0
@@ -98,3 +98,4 @@ out = ' '.join([
     str(clean)
 ])
 print(out, end='')
+
