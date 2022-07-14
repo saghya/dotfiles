@@ -1,17 +1,15 @@
-source ~/.config/zsh/.zprofile
+source "$HOME"/.config/zsh/.zprofile
 
 ### Export
-#export PATH=~/.local/bin:$PATH
 export TERM="xterm-256color"
-export HISTFILE=~/.config/zsh/.zsh_history
+export HISTFILE="$HOME"/.config/zsh/.zsh_history
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 
-export EDITOR='nvim'
-export VISUAL='nvim'
-export TERMINAL='alacritty'
-export BROWSER='google-chrome-stable'
-export MANPAGER='nvim +Man!'
-# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export EDITOR="nvim"
+export VISUAL="nvim"
+export TERMINAL="alacritty"
+export BROWSER="google-chrome-stable"
+export MANPAGER="nvim +Man!"
 
 setopt auto_cd
 setopt PROMPT_SUBST
@@ -31,8 +29,7 @@ bindkey  "^[[3~"  delete-char
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
-source ~/.config/zsh/git-prompt/git-prompt.plugin.zsh
-# PROMPT="%F{48}%~%f > "
+source "$HOME"/.config/zsh/git-prompt/git-prompt.plugin.zsh
 PROMPT='%{$fg[green]%}%~%f$(git_super_status) > '
 
 # If not running interactively, don't do anything
@@ -109,10 +106,11 @@ fi
 IFS=$SAVEIFS
 
 ### ALIASES ###
-source ~/.config/zsh/alias.sh
+source "$HOME"/.config/zsh/alias.sh
+
+source "$HOME"/.config/zsh/git-auto-fetch/git-auto-fetch.plugin.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 afetch
-
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
