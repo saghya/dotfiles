@@ -62,6 +62,17 @@ case ${TERM} in
     ;;
 esac
 
+### Run git fetch when cd'ing into a git repo
+chpwd () {
+  set -- "$(git rev-parse --show-toplevel 2>/dev/null)"
+  # If cd'ing into a git working copy and not within the same working copy
+  if [ -n "$1" ] && [ "$1" != "$vc_root" ]; then
+    vc_root="$1"
+    git fetch
+  fi
+}
+chpwd
+
 ### Function extract for common file formats ###
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
@@ -108,7 +119,6 @@ IFS=$SAVEIFS
 ### ALIASES ###
 source "$HOME"/.config/zsh/alias.sh
 
-source "$HOME"/.config/zsh/git-auto-fetch/git-auto-fetch.plugin.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
