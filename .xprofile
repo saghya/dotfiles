@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export PATH="${PATH}:${HOME}/.local/scripts"
+export PATH="$PATH:${$(find ~/.local/scripts -type d -printf %p:)%%:}"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export QT_QPA_PLATFORMTHEME=qt5ct
 
@@ -12,6 +12,8 @@ fehbg
 picom -b
 dunst &
 udiskie &
+pactl set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo
+pactl set-default-source alsa_output.pci-0000_00_1f.3.analog-stereo.monitor
 
 read -r CHASSIS_TYPE < /sys/class/dmi/id/chassis_type
 if [ "$CHASSIS_TYPE" = 9 ] || [ "$CHASSIS_TYPE" = 10 ]; then
