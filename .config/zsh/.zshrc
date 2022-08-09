@@ -35,19 +35,6 @@ PROMPT='%{$fg[green]%}%~%f$(git_super_status) > '
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-### PATH
-if [ -d "$HOME/.bin" ] ;
-  then PATH="$HOME/.bin:$PATH"
-fi
-
-if [ -d "$HOME/.local/bin" ] ;
-  then PATH="$HOME/.local/bin:$PATH"
-fi
-
-if [ -d "$HOME/Applications" ] ;
-  then PATH="$HOME/Applications:$PATH"
-fi
-
 ### CHANGE TITLE OF TERMINALS
 case ${TERM} in
     xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|alacritty|st|konsole*)

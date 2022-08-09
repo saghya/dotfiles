@@ -2,7 +2,7 @@
 
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
-export PATH="$PATH:${$(find ~/.local/scripts -type d -printf %p:)%%:}"
+export PATH="${PATH}:${HOME}/.local/scripts:${HOME}/.local/scripts/blocks"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export QT_QPA_PLATFORMTHEME=qt5ct
 
