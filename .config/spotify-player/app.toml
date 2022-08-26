@@ -13,5 +13,5 @@ pause_icon = "▶"
 name = "spotify-player"
 device_type = "speaker"
 volume = 65
-bitrate = 160
+bitrate = 320
 audio_cache = false
