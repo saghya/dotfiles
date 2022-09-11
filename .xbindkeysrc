@@ -1,13 +1,13 @@
 # Increase volume
-"pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ +1000 ; kill -35 $(pidof dwmblocks); volumeControl.sh"
+"volumeControl.sh up"
    XF86AudioRaiseVolume
 
 # Decrease volume
-"pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ -1000 ; kill -35 $(pidof dwmblocks); volumeControl.sh"
+"volumeControl.sh down"
    XF86AudioLowerVolume
 
 # Mute volume
-"pactl set-sink-mute @DEFAULT_SINK@ toggle ; kill -35 $(pidof dwmblocks); volumeControl.sh"
+"volumeControl.sh mute"
    XF86AudioMute
 
 # Mute microphone
@@ -15,13 +15,11 @@
    XF86AudioMicMute
 
 #BrightnessUp
-# "xbacklight +15"
 "brightnessControl.sh up"
    c:233
    XF86MonBrightnessUp
 
 #BrightnessDown
-# "xbacklight -15"
 "brightnessControl.sh down"
    c:232
    XF86MonBrightnessDown
