@@ -296,7 +296,7 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#282a36"
-    foreground = "#B3C2F2"
+    foreground = "#b3c2f2"
     timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
