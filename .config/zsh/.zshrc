@@ -29,8 +29,8 @@ bindkey  "^[[3~"  delete-char
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
-source "$HOME"/.config/zsh/git-prompt/git-prompt.plugin.zsh
-PROMPT='%{$fg[green]%}%~%f$(git_super_status) > '
+source "$HOME"/.config/zsh/git-prompt/git-prompt.zsh
+PROMPT='%{$fg[green]%}%~%f$(gitprompt) > '
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
