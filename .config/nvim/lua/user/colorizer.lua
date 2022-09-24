@@ -4,3 +4,4 @@ if not colorizer_status_ok then
 end
 
 colorizer.setup()
+

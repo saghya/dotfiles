@@ -21,16 +21,17 @@ local options = {
     smartindent = true,
     splitbelow = true,
     splitright = true,
+    fillchars = { stl = "-", stlnc = "-", vert = "|" },
 }
 
 vim.opt.shortmess:append "c"
+vim.opt.iskeyword:append("-")
+vim.opt.whichwrap:append("<,>,[,],h,l")
 
 for k, v in pairs(options) do
     vim.opt[k] = v
 end
 
-
-vim.cmd "set whichwrap+=<,>,[,],h,l"
-vim.cmd [[set iskeyword+=-]]
 vim.cmd [[autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o]]
+vim.cmd [[let &statusline='%#VertSplit# ']]
 

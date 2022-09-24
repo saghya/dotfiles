@@ -6,3 +6,4 @@ if not status_ok then
 end
 
 vim.cmd [[hi clear CursorLine]]
+
