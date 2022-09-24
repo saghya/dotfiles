@@ -30,7 +30,7 @@ bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
 source "$HOME"/.config/zsh/git-prompt/git-prompt.zsh
-PROMPT='%F{cyan}%B%40<..<%~%f$(gitprompt) %B%(?.%F{green}>.%F{red}>)%f '
+PROMPT='%F{blue}%B%40<..<%~%f$(gitprompt) %B%(?.%F{green}>.%F{red}>)%f '
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
