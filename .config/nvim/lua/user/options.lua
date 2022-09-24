@@ -21,7 +21,7 @@ local options = {
     smartindent = true,
     splitbelow = true,
     splitright = true,
-    fillchars = { stl = "-", stlnc = "-", vert = "|" },
+    fillchars = { stl = "─", stlnc = "─", vert = "│" },
 }
 
 vim.opt.shortmess:append "c"
