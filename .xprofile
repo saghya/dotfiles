@@ -5,7 +5,7 @@ if [ -f "$userresources" ]; then
     xrdb -merge "$userresources"
 fi
 
-export PATH="${PATH}:${HOME}/.local/scripts:${HOME}/.local/scripts/blocks"
+export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/scripts:${HOME}/.local/scripts/blocks"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export QT_QPA_PLATFORMTHEME=qt5ct
 
