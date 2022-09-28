@@ -1,19 +1,18 @@
 set default-bg "#282a36"
 
 set inputbar-bg "#282a36"
-set inputbar-fg "#eeeeee"
+set inputbar-fg "#eff0eb"
 
 set completion-bg "#252733"
-set completion-fg "#eeeeee"
-
-set statusbar-bg "#252733"
-set statusbar-fg "#eeeeee"
-
+set completion-fg "#eff0eb"
 set completion-highlight-bg "#69a2ff"
 set completion-highlight-fg "#282a36"
 
+set statusbar-bg "#252733"
+set statusbar-fg "#eff0eb"
+
 set recolor-lightcolor "#282a36"
-set recolor-darkcolor "#eeeeee"
+set recolor-darkcolor "#eff0eb"
 
 set highlight-color "#69a2ff"
 
@@ -24,7 +23,17 @@ set notification-warning-fg "#282a36"
 set notification-error-bg "#eb4034"
 set notification-error-fg "#282a36"
 
-set selection-notification false
+set index-fg "#eff0eb"
+set index-bg "#282a36"
+set index-active-fg "#282a36"
+set index-active-bg "#69a2ff"
+
+set render-loading false
+set render-loading-fg "#eff0eb"
+set render-loading-bg "#282a36"
+
+set font "JetBrains Mono 9"
+set selection-notification true
 set sandbox none
 set statusbar-h-padding 2
 set statusbar-v-padding 2
@@ -35,9 +44,7 @@ map <C-k> scroll full-up
 map <C-j> scroll full-down
 map <Left> scroll full-up
 map <Right> scroll full-down
-map D toggle_page_mode
-map r reload
-map R rotate
 map K zoom in
 map J zoom out
 map p print
+
