@@ -5,9 +5,9 @@ alias r="ranger"
 alias z="zathura"
 alias h="htop"
 alias feh="feh --image-bg black -Z -."
-alias df="df --si"                          # human-readable sizes
-alias du="du --si"                          # human-readable sizes
-alias free="free --si -h"                   # human-readable sizes
+alias df="df -h"                          # human-readable sizes
+alias du="du -h"                          # human-readable sizes
+alias free="free -h"                      # human-readable sizes
 
 # Changing "ls" to "exa"
 alias ls="exa -l --no-user --color=always --group-directories-first"
