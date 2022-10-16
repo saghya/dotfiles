@@ -6,7 +6,7 @@ alias z="zathura"
 alias h="htop"
 alias feh="feh --image-bg black -Z -."
 alias df="df -h"                          # human-readable sizes
-alias du="du -h"                          # human-readable sizes
+alias du="du -b -h"                       # human-readable sizes
 alias free="free -h"                      # human-readable sizes
 
 # Changing "ls" to "exa"
