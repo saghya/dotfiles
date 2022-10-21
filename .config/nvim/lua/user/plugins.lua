@@ -40,15 +40,21 @@ packer.init {
 
 -- Install plugins here
 return packer.startup(function(use)
-    use "wbthomason/packer.nvim"     -- Have packer manage itself
-    use "windwp/nvim-autopairs"      -- Autopairs, integrates with both cmp and treesitter
+    use "wbthomason/packer.nvim"    -- Have packer manage itself
+    use "windwp/nvim-autopairs"     -- Autopairs, integrates with both cmp and treesitter
     use "lewis6991/impatient.nvim"
     use "lukas-reineke/indent-blankline.nvim"
     use "norcalli/nvim-colorizer.lua"
 
     -- Colorschemes
-    use "ChristianChiarulli/nvcode-color-schemes.vim"
-
+    use {
+        "catppuccin/nvim",          -- TODO: move config to colorscheme.lua
+        as = "catppuccin",
+        config = function()
+            vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
+            require("catppuccin").setup()
+        end
+    }
     -- cmp plugins
     use "hrsh7th/nvim-cmp"          -- The completion plugin
     use "hrsh7th/cmp-path"          -- path completions
