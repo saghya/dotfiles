@@ -1,36 +1,4 @@
-set default-bg "#282a36"
-
-set inputbar-bg "#282a36"
-set inputbar-fg "#eff0eb"
-
-set completion-bg "#252733"
-set completion-fg "#eff0eb"
-set completion-highlight-bg "#69a2ff"
-set completion-highlight-fg "#282a36"
-
-set statusbar-bg "#252733"
-set statusbar-fg "#eff0eb"
-
-set recolor-lightcolor "#282a36"
-set recolor-darkcolor "#eff0eb"
-
-set highlight-color "#69a2ff"
-
-set notification-bg "#4287f5"
-set notification-fg "#282a36"
-set notification-warning-bg "#fcba03"
-set notification-warning-fg "#282a36"
-set notification-error-bg "#eb4034"
-set notification-error-fg "#282a36"
-
-set index-fg "#eff0eb"
-set index-bg "#282a36"
-set index-active-fg "#282a36"
-set index-active-bg "#69a2ff"
-
 set render-loading false
-set render-loading-fg "#eff0eb"
-set render-loading-bg "#282a36"
 
 set font "JetBrains Mono 9"
 set selection-notification true
@@ -47,4 +15,6 @@ map <Right> scroll full-down
 map K zoom in
 map J zoom out
 map p print
+
+include ./catppuccin/catppuccin-mocha
 
