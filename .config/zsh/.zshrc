@@ -1,16 +1,3 @@
-source "$HOME"/.config/zsh/.zprofile
-
-### Export
-export TERM="xterm-256color"
-export HISTFILE="$HOME"/.config/zsh/.zsh_history
-export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
-
-export EDITOR="nvim"
-export VISUAL="nvim"
-export TERMINAL="alacritty"
-export BROWSER="google-chrome-stable"
-export MANPAGER="nvim +Man!"
-
 setopt auto_cd
 setopt PROMPT_SUBST
 
