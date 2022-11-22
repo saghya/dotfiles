@@ -1,12 +1,12 @@
 #!/bin/sh
 
-userresources=$HOME/.Xresources
+userresources="$HOME"/.config/X11/Xresources
 if [ -f "$userresources" ]; then
     xrdb -merge "$userresources"
 fi
 
 setxkbmap -layout hu
-xbindkeys
+xbindkeys -f "$HOME"/.config/X11/xbindkeysrc
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 xset r rate 250 30
 fehbg &

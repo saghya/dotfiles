@@ -13,6 +13,6 @@ export BROWSER="google-chrome-stable"
 export MANPAGER="nvim +Man!"
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-	  exec startx >/dev/null 2>&1
+	  exec startx "$HOME"/.config/X11/xinitrc >/dev/null 2>&1
 fi
 
