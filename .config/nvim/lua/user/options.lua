@@ -34,4 +34,5 @@ end
 
 vim.cmd [[autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o]]
 vim.cmd [[let &statusline='%#VertSplit# ']]
+vim.cmd [[set nowrap]]
 

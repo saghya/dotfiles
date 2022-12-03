@@ -47,14 +47,8 @@ return packer.startup(function(use)
     use "norcalli/nvim-colorizer.lua"
 
     -- Colorschemes
-    use {
-        "catppuccin/nvim",          -- TODO: move config to colorscheme.lua
-        as = "catppuccin",
-        config = function()
-            vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
-            require("catppuccin").setup()
-        end
-    }
+    use { "catppuccin/nvim", as = "catppuccin" }
+
     -- cmp plugins
     use "hrsh7th/nvim-cmp"          -- The completion plugin
     use "hrsh7th/cmp-path"          -- path completions
