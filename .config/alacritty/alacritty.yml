@@ -226,11 +226,7 @@ draw_bold_text_with_bright_colors: true
   #    white:   '#eff0eb'
 
 import:
-  # uncomment the flavour you want below:
   - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
-#  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
-#  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
-#  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
 
   # Dim colors
   #
