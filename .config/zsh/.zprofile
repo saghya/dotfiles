@@ -11,7 +11,6 @@ export VISUAL="nvim"
 export TERMINAL="alacritty"
 export BROWSER="google-chrome-stable"
 export MANPAGER="nvim +Man!"
-export XAUTHORITY="$HOME"/.cache/Xauthority
 export GTK2_RC_FILES="$HOME"/.config/gtk-2.0/gtkrc-2.0
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
