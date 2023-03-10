@@ -119,6 +119,7 @@ source "$HOME"/.config/zsh/alias.sh
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source "$HOME"/.config/zsh/system-clipboard/zsh-system-clipboard.zsh
 
 afetch
 
