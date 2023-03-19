@@ -9,8 +9,7 @@ setxkbmap -layout hu
 xbindkeys -f "$HOME"/.config/X11/xbindkeysrc
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 xset r rate 250 30
-xset s 300 5
-xss-lock -n /usr/lib/xsecurelock/dimmer -l -- xsecurelock &
+xautolock -time 10 -notify 5 -notifier '/usr/lib/xsecurelock/until_nonidle /usr/lib/xsecurelock/dimmer' -locker xsecurelock -killtime 10 -killer "systemctl suspend-then-hibernate" -detectsleep &
 fehbg &
 pactl set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo
 pactl set-default-source alsa_output.pci-0000_00_1f.3.analog-stereo.monitor
