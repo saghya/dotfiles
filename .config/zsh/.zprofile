@@ -11,7 +11,6 @@ export VISUAL="nvim"
 export TERMINAL="alacritty"
 export BROWSER="google-chrome-stable"
 export MANPAGER="nvim +Man!"
-export GTK2_RC_FILES="$HOME"/.config/gtk-2.0/gtkrc-2.0
 
 export XSECURELOCK_BACKGROUND_COLOR="#1E1E2E"
 export XSECURELOCK_AUTH_BACKGROUND_COLOR="#45475A"
