@@ -9,7 +9,7 @@ setxkbmap -layout hu
 xbindkeys -f "$HOME"/.config/X11/xbindkeysrc
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 xset r rate 250 30
-xset s 300 5
+xset s 300 20
 xss-lock -n /usr/lib/xsecurelock/dimmer -l -- xsecurelock &
 xidlehook --detect-sleep --not-when-fullscreen --not-when-audio --timer 600 "systemctl suspend-then-hibernate" '' &
 fehbg &

@@ -17,6 +17,7 @@ export XSECURELOCK_AUTH_BACKGROUND_COLOR="#7287FD"
 export XSECURELOCK_AUTH_FOREGROUND_COLOR="#0E0E1E"
 export XSECURELOCK_PASSWORD_PROMPT="asterisks"
 export XSECURELOCK_SHOW_KEYBOARD_LAYOUT=0
+export XSECURELOCK_WAIT_TIME_MS=20000
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 	  exec startx "$HOME"/.config/X11/xinitrc >/dev/null 2>&1
