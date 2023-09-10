@@ -9,12 +9,11 @@ alias df="df -h"                          # human-readable sizes
 alias du="du -b -h"                       # human-readable sizes
 alias free="free -h"                      # human-readable sizes
 
-# Changing "ls" to "exa"
-alias ls="exa -l --no-user --color=always --group-directories-first"
-alias l="exa -la --no-user --git --color=always --group-directories-first"
-alias ll="exa -lah --git --color=always --group-directories-first"
-alias lt="exa -aT --color=always --group-directories-first"
-alias l.="exa -a | egrep "^\.""
+# Changing "ls" to "eza"
+alias ls="eza -l --no-user --color=always --group-directories-first"
+alias l="eza -la --no-user --git --color=always --group-directories-first"
+alias ll="eza -lah --git --color=always --group-directories-first"
+alias lt="eza -aT --color=always --group-directories-first"
 
 # Colorize grep output (good for log files)
 alias grep="grep --color=auto"
