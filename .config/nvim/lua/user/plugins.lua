@@ -43,7 +43,6 @@ return packer.startup(function(use)
     use "wbthomason/packer.nvim"    -- Have packer manage itself
     use "windwp/nvim-autopairs"     -- Autopairs, integrates with both cmp and treesitter
     use "lewis6991/impatient.nvim"
-    use "lukas-reineke/indent-blankline.nvim"
     use "norcalli/nvim-colorizer.lua"
 
     -- Colorschemes

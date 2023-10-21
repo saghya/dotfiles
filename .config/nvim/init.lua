@@ -7,6 +7,5 @@ require "user.lsp"
 require "user.treesitter"
 require "user.autopairs"
 require "user.impatient"
-require "user.indent_blankline"
 require "user.colorizer"
 
