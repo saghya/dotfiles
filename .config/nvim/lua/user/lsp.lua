@@ -7,7 +7,7 @@ end
 capabilities = cmp_nvim_lsp.default_capabilities(capabilities)
 
 -- lsp setup
-local status_ok, lspconfig = pcall(require, "lspconfig")
+local status_ok, lspconfig = pcall(require, "vim.lsp.config")
 if not status_ok then
     return
 end
