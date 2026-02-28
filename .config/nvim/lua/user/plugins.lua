@@ -43,7 +43,7 @@ return packer.startup(function(use)
     use "wbthomason/packer.nvim"    -- Have packer manage itself
     use "windwp/nvim-autopairs"     -- Autopairs, integrates with both cmp and treesitter
     use "lewis6991/impatient.nvim"
-    use "norcalli/nvim-colorizer.lua"
+    use "NvChad/nvim-colorizer.lua"
 
     -- Colorschemes
     use { "catppuccin/nvim", as = "catppuccin" }
@@ -56,7 +56,10 @@ return packer.startup(function(use)
     use "hrsh7th/cmp-buffer"
     
     -- snippets
-    use "L3MON4D3/LuaSnip"          -- snippet engine
+    use {
+      "L3MON4D3/LuaSnip",           -- snippet engine
+      run = "make install_jsregexp",
+    }
 
     -- LSP
     use "neovim/nvim-lspconfig"     -- enable LSP
