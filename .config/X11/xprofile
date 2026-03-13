@@ -5,9 +5,8 @@ if [ -f "$userresources" ]; then
     xrdb -merge "$userresources"
 fi
 
-setxkbmap -layout hu
+setxkbmap -layout hu -option caps:escape
 xbindkeys -f "$HOME"/.config/X11/xbindkeysrc
-xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 xset r rate 250 30
 xset s 300 20
 xss-lock -n /usr/lib/xsecurelock/dimmer -l -- xsecurelock &
