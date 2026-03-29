@@ -117,6 +117,12 @@ IFS=$SAVEIFS
 ### ALIASES ###
 source "$HOME"/.config/zsh/alias.sh
 
+if [[ -n "$WAYLAND_DISPLAY" && -n "$XDG_RUNTIME_DIR" && -S "$XDG_RUNTIME_DIR/$WAYLAND_DISPLAY" ]]; then
+  export ZSH_SYSTEM_CLIPBOARD_METHOD=wlc
+elif [[ -n "$DISPLAY" ]]; then
+  export ZSH_SYSTEM_CLIPBOARD_METHOD=xcc
+fi
+
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source "$HOME"/.config/zsh/system-clipboard/zsh-system-clipboard.zsh

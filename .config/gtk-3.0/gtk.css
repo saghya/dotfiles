@@ -1,0 +1,8 @@
+menu,
+.menu,
+popover,
+.background.menu,
+csd.popup decoration,
+.popup decoration {
+    border-radius: 0;
+}
