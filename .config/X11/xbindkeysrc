@@ -1,13 +1,13 @@
 # Increase volume
-"volumeControl.sh up"
+"volume-control up"
    XF86AudioRaiseVolume
 
 # Decrease volume
-"volumeControl.sh down"
+"volume-control down"
    XF86AudioLowerVolume
 
 # Mute volume
-"volumeControl.sh mute"
+"volume-control mute"
    XF86AudioMute
 
 # Mute microphone
@@ -15,11 +15,11 @@
    XF86AudioMicMute
 
 #BrightnessUp
-"brightnessControl.sh up"
+"brightness-control up"
    c:233
    XF86MonBrightnessUp
 
 #BrightnessDown
-"brightnessControl.sh down"
+"brightness-control down"
    c:232
    XF86MonBrightnessDown
