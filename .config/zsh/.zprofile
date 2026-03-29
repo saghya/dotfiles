@@ -1,4 +1,4 @@
-export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/scripts:${HOME}/.local/scripts/blocks"
+export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/scripts:${HOME}/.local/scripts/xorg:${HOME}/.local/scripts/xorg/blocks:${HOME}/.local/scripts/xorg/helpers:${HOME}/.local/scripts/wayland:${HOME}/.local/scripts/wayland/blocks"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export QT_QPA_PLATFORMTHEME=qt6ct
 
