@@ -16,5 +16,5 @@ map K zoom in
 map J zoom out
 map p print
 
-include ./catppuccin/catppuccin-mocha
+include ./catppuccin-mocha
 
